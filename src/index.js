@@ -48,3 +48,15 @@ console.log(intro);
 console.log(intro.address);
 console.log(intro.address.nation);
 console.log(intro["j o b"]);
+
+//비구조화 할당
+const ironMan = {
+  name: "토니 스타크",
+  actor: "로버트 다우니 주니어",
+  alias: "아이언맨"
+};
+function printIronMan({ alias, name, actor }) {
+  const text = `${alias}(${name})의 역할을 맡은 배우는 ${actor}`;
+  console.log(text);
+}
+printIronMan(ironMan);

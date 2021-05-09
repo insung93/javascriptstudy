@@ -60,3 +60,27 @@ function printIronMan({ alias, name, actor }) {
   console.log(text);
 }
 printIronMan(ironMan);
+
+const array = [1, 2, 3, 4];
+console.log(array);
+array.push(5);
+console.log(array);
+
+for (let a = 0; a < array.length; a++) {
+  console.log(array[a]);
+}
+
+const keyvalue = {
+  a: 1,
+  b: 2,
+  c: 3,
+  d: 4
+};
+console.log(Object.entries(keyvalue));
+//  배열형태로 반환
+console.log(Object.keys(keyvalue));
+console.log(Object.values(keyvalue));
+
+for (let a in keyvalue) {
+  console.log(`${a} : ${keyvalue[a]}`);
+}

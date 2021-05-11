@@ -84,3 +84,16 @@ console.log(Object.values(keyvalue));
 for (let a in keyvalue) {
   console.log(`${a} : ${keyvalue[a]}`);
 }
+
+var rectangle = {
+  upperLeft: { x: 2, y: 2 },
+  lowerRight: { x: 4, y: 5 }
+};
+
+console.log(rectangle.lowerRight.x);
+console.log(typeof rectangle);
+
+let aaa = 5;
+let bbb = "5";
+console.log(typeof aaa);
+console.log(typeof bbb);
